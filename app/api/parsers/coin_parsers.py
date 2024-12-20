@@ -9,6 +9,7 @@ class CoinParsers:
         parser.add_argument('category', type=str, help='category of the coin')
         parser.add_argument('page_num', type=int, help='page number')
         parser.add_argument('per_page', type=int, help='items per page')
+        parser.add_argument('Authorization', location='headers')
 
         return parser
     
@@ -17,5 +18,6 @@ class CoinParsers:
         parser = reqparse.RequestParser()
         parser.add_argument('page_num', type=int, help='page number')
         parser.add_argument('per_page', type=int, help='items per page')
+        parser.add_argument('Authorization', location='headers')
         
         return parser
