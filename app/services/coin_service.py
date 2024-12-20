@@ -16,3 +16,10 @@ class CoinService:
         response = requests.get(url)
         data = response.json()
         return data
+    
+    @classmethod
+    def get_coin_details(cls, vs_currency):        
+        url= Config.COINGECKO_API_BASE + f'/markets?vs_currency={vs_currency}'
+        response = requests.get(url)
+        data = response.json()
+        return data

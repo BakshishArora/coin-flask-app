@@ -15,3 +15,8 @@ class Coins(Resource):
 class CoinCategories(Resource):
     def get(self):
         return CoinsController.get_coins_categories_list()
+    
+@api.route('/api/v1.0/coins/markets', methods=['GET'])
+class CoinDetails(Resource):
+    def get(self):
+        return CoinsController.get_coin_details()
