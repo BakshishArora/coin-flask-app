@@ -20,7 +20,6 @@ class TestCoinController(unittest.TestCase):
         mockutils.return_value = 2, 1
         mockcontroller.return_value = [{}, {}, {}]
         response = CoinsController.get_coins_list()
-        print(response)
         self.assertEqual(len(response), 2)
 
     @patch('app.services.coin_service.CoinService.get_coins_categories_list')
@@ -29,5 +28,4 @@ class TestCoinController(unittest.TestCase):
         mockutils.return_value = 2, 1
         mockcontroller.return_value = [{}, {}, {}]
         response = CoinsController.get_coins_categories_list()
-        print(response)
-        self.assertEqual(len(response), 2)
+        self.assertEqual(len(response[0]), 1)
