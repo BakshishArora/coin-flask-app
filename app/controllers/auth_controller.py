@@ -1,5 +1,5 @@
 from flask import request
-from services.auth import AuthService
+from app.services.auth import AuthService
 
 users = {'Bakshish': 'BakshishPassword'}
 

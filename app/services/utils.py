@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 import requests
-from config import Config
+from app.config import Config
 
 
 class Utilities():

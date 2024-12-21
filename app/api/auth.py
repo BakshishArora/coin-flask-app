@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_restx import Resource, Namespace
-from controllers.auth_controller import AuthController
-from api.parsers.credential_parser import Credentials
+from app.controllers.auth_controller import AuthController
+from app.api.parsers.credential_parser import Credentials
 
 api1 = Namespace('authorize', description='Authorization')
 

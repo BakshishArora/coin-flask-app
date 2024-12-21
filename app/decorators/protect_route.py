@@ -1,6 +1,6 @@
 from functools import wraps
 from flask import request
-from services.auth import AuthService
+from app.services.auth import AuthService
 
 def protect_route(f):
     @wraps(f)

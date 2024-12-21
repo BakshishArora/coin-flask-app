@@ -1,7 +1,7 @@
 from flask import request
-from services.coin_service import CoinService
-from services.utils import Utilities
-from config import Config
+from app.services.coin_service import CoinService
+from app.services.utils import Utilities
+from app.config import Config
 
 class CoinsController:
 

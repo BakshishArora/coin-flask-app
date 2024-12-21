@@ -1,7 +1,7 @@
 from flask_restx import Namespace, Resource
-from controllers.coins_controller import CoinsController
-from api.parsers.coin_parsers import CoinParsers
-from decorators.protect_route import protect_route
+from app.controllers.coins_controller import CoinsController
+from app.api.parsers.coin_parsers import CoinParsers
+from app.decorators.protect_route import protect_route
 
 api = Namespace('coins', description='Coins related operations')
 

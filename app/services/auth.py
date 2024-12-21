@@ -1,7 +1,7 @@
 import datetime
 from datetime import timezone
 import jwt
-from config import Config
+from app.config import Config
 
 class AuthService:
     

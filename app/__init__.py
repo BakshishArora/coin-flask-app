@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_restx import Resource, Api
-from api.coins import api as coins_namespace
-from api.auth import api1 as authorize_namespace
+from app.api.coins import api as coins_namespace
+from app.api.auth import api1 as authorize_namespace
 
 
 app = Flask(__name__)
